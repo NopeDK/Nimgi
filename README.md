@@ -3,7 +3,8 @@
 ## Example on how to use:
 + Get and build uwsgi as core
 + Build "corerouter" and "http" as plugins to core
-+ Compile the code
-+ Launch "uwsgi --plugin=http,nimgi --http 0.0.0.0:9090 --http-modifier1=250"
++ Copy "uwsgi", "uwsgi.h", "http_plugin.so" and "corerouter_plugin.so" to your project folder
++ Compile the Nim code
++ Launch "uwsgi --ini nimgi.ini"
 + Try to "wget -t 1 localhost:9090" to test the server
 + Crash (for now)
